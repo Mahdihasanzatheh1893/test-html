@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:
+    linear-gradient(45deg ,#1e2221,#000);
+    animation: changeColor 2s linear infinite alternate;
+}
+@keyframes changeColor{
+    to {filter: hue-rotate(90deg); } 
+}
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+.login{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    width: 50vw;
+    height: 70vh;
+    box-shadow: 5px 5px 5px #1a1a1a;
+}
+.photo{
+    display: inline-block;
+    width: 44%;
+    height: 100%;
+    background-image: url(../image/pictureregister.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logininput{
+    position: absolute;
+    display: inline-block;
+    width: 56%;
+    height: 100%;
+    background-color: #0d0d0d;
+}
+nav{
+    display: inline-block;
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+li{
+    padding: 20px 30px;
+    font-size: 19px;
+    display: inline-block;
+}
+.menu{
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+.menu:hover{
+
+    animation: pulse 2s ;
+}
+@keyframes pulse{
+    0% {box-shadow: #d6cab0 0 0 0 0;}
+    80% {box-shadow: #eb2e0c00 0 0 0 20px;}
+}
+img{
+    margin-top: 5px;
+    width: 70px;
+    height: 85%;
+
+}
+h1{
+    margin: 45px 0 30px;
+    padding: 0;
+    color: #d6cab0;
+    text-align: center;
+}
+.user-box{
+    position: relative;
+}
+.user-box input{
+    width: 80%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    border: none;
+    border-bottom: 1px solid #d6cab0;
+    outline: none;
+    background: transparent;
+}
+.user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #d6cab0;
+    pointer-events: none;
+    transition: .5s;
+}
+.user-box input:focus~label,
+.user-box input:valid~label{
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 12px;
+}
+.user-box input:focus{
+    border-bottom: 2px solid white;
+}
+input:valid{
+    border-bottom: 2px solid white;
+}
+form .submit{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #d6cab0;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    margin-left: 60%;
+    letter-spacing: 4px;
+}
+
+.submit:hover{
+    background: white;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white,
+    0 0 25px white,
+    0 0 50px white,
+    0 0 100px white;
+}
+.submit span{
+    position: absolute;
+    display: block;
+}
+.submit span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white);
+    animation: btn-anim1 1s linear infinite;
+}
+@keyframes btn-anim1{
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+
+.submit span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes btn-anim2{
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100%{
+        top: 100%;
+    }
+}
+.submit span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, white);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes btn-anim3{
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+.submit span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, white);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes btn-anim4{
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
+.forgetpass{
+    color: #42A5F5;
+    text-decoration: none;
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+form{
+    margin-top: 80px;
+}

@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car web</title>
+    <link rel="stylesheet" href="CSS/register.css">
+</head>
+<body>
+
+
+    <nav>
+        <ul>
+            <li><a href="main.HTML" class="logo"><img src="image/mercedeslogo.png" alt="">Mercedes-Benz</a></li>
+            <li class="menu">About</li>
+            <li class="menu">Sport</li>
+            <li class="menu">Lifestyle</li>
+            <li class="menu">Design</li>
+            <li class="menu">Model</li>
+
+        </ul>
+    </nav>
+
+    <div class="photo">
+
+    </div>
+    <div class="inputregister">
+        <h1>Create Account</h1>
+        <form action="">
+            <div class="inputs">
+                <label for="Fname">First Name</label>
+                <br>
+            <input type="text" id="Fname">
+            </div>
+            <div class="inputs">
+                <label for="Lname">Last Name</label>
+                <br>
+            <input type="text" id="Lname">
+            </div>
+
+            <div class="inputs">
+                <label for="selectid">Select Market</label>
+                <br>
+            <select name="" id="selectid">
+                <option value="">United state</option>
+                <option value="">Iran</option>
+                <option value="">Italia</option>
+                <option value="">Island</option>
+                <option value="">Mexico</option>
+                <option value="">New Zealand</option>
+            </select>
+            </div>
+            <div class="inputs">
+                <label for="phoneNumber">Phone Number</label>
+                <br>
+            <input type="text" pattern="[0-9]{8-11}" id="phoneNumber">
+            </div>
+            <div class="inputs">
+                <label for="email">E-mail</label>
+                <br>
+            <input type="email" required id="email">
+            </div>
+            <div class="inputs">
+                <label for="password">Password</label>
+                <br>
+            <input type="password" minlength="8" required id="password">
+            </div>
+
+            <hr>
+
+            <input type="checkbox" id="check" class="inputcheck" required>
+            <label for="check" class="labelcheck">By creating a Mercedes-Benz Account, 
+                I agree to Mercedes-Benz's Privacy Notice</label>
+                <br>
+                
+                <!-- <button type="submit">
+                    Create Account
+                </button> -->
+
+                <button class="btn draw-border">Create Account</button>
+            
+            
+
+        </form>
+        
+    </div>
+    
+
+
+</body>
+</html>

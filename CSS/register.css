@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    overflow: hidden;
+    background-color: black;
+}
+.photo{
+    z-index: -1;
+    position: fixed;
+    margin-top: 10px;
+    width: 45%;
+    height: 100vh;
+    background-image: url(../image/pictureregister7.jpg);
+    background-size: cover;
+    background-position: center;
+    float: right;
+    right: 0;
+}
+
+nav{
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+}
+
+img{
+    margin-top: 5px;
+    width: 70px;
+    height: 85%;
+
+}
+li{
+    padding: 20px 30px;
+    font-size: 19px;
+    display: inline-block;
+}
+.menu{
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+}
+.menu:hover{
+
+    animation: pulse 2s ;
+}
+@keyframes pulse{
+    0% {box-shadow: #d6cab0 0 0 0 0;}
+    80% {box-shadow: #eb2e0c00 0 0 0 20px;}
+}
+.inputregister{
+    margin: 30px 70px;
+    width: 53%;
+    height: 85vh;
+    /* background-color: aqua; */
+    
+}
+.inputs{
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+input{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    padding: 0 15px;
+    border-radius: 30px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border: 1px solid #d6cab0;
+    transition: 0.3s;
+}
+/* input:hover{
+    box-shadow: 
+    0 0 25px #d6cab0,
+    0 0 25px black;
+} */
+input:focus{
+    box-shadow: 
+    0 0 15px #d6cab0,
+    0 0 15px black;
+}
+select{
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border: 1px solid #d6cab0;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+select:focus{
+    box-shadow: 
+    0 0 15px #d6cab0,
+    0 0 15px black;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+label{
+    font-size: 20px;
+    display: inline-block;
+    margin: 12px 10px 15px 10px;
+}
+hr{
+    width: 81%;
+    border-color: #d6cab0;
+    margin: 25px 0px;
+}
+.inputcheck{
+    vertical-align: -14px;
+    width: 22px;
+}
+.labelcheck{
+    font-size: 17px;
+}
+button{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 26%;
+    
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #000;
+    color: #d6cab0;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover {
+    color: #d6cab0;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #d6cab0;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .btn:focus {
+    outline: 2px dotted #000;
+  }
+  

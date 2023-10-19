@@ -1,0 +1,12 @@
+div {
+    background-color: aqua;
+    width:  400px;
+    height:  400px;
+    transition: all 2s;
+}
+
+div:hover {
+width: 800px;
+    height: 800px;
+
+}
